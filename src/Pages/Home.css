@@ -1,0 +1,47 @@
+@import "../Assets/Main.css";
+
+.homeHero {
+    background-color: var(--background);
+    width: 97%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 1rem;
+}
+
+.homeHeroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: #969899;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.1); /* over ride */
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.7);
+
+    font-family: Impact, fantasy;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.frosted {
+    width: 97%;
+    height: 30vh;
+    display: flex;
+    justify-content: content;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 70vh;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.08);
+}
+
+.text {
+    color: var(--text);
+}

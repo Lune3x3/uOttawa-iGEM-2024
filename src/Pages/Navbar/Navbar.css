@@ -1,0 +1,71 @@
+@import '../../Assets/Main.css';
+
+.navbar {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 97%;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 0.75rem 1rem 0.75rem 1rem;
+    border-radius: 1rem;
+    place-items: center;
+    top: 0px;
+    z-index: 20;
+    background: var(--background);
+}
+
+.inNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.linkHome {
+    display: flex;
+    place-items: center;
+    gap: 0.5rem;
+}
+
+.homeLogo {
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.homeText {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pages {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.pageText {
+    color: rgb(216, 216, 216);
+}
+
+.pageText:hover {
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.linkText {
+    color: rgb(216, 216, 216);
+}
+
+.linkText:hover {
+    color: white;
+}

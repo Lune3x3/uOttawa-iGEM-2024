@@ -1,0 +1,61 @@
+@import '../../../Assets/Main.css';
+
+.profileButton {
+    flex-grow: 1;
+    display: grid;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profileButton:hover {
+    transform: scale(0.97);
+}
+
+.profileImage{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+.overlayBG {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 21;
+}
+
+.overlayContainer {
+    background-color: var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 22;
+    padding: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.overlayControls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.overlayClose {
+    border: none;
+    background-color: transparent;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.overlayClose:after {
+    display: inline-block;
+    content: "\00d7"
+}
