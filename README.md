@@ -1,4 +1,4 @@
-#uOttawa's 2024 iGEM project wiki
+# uOttawa's 2024 iGEM project wiki
 
 The website is currently in development, so be forgiving of bugs and issues.
 
