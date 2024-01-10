@@ -15,7 +15,7 @@ export const MenuItemsData = [
                 url: '/proof-of-concept'
             },
             {
-                title: 'implementation',
+                title: 'Implementation',
                 url: '/implementation'
             }
         ]

@@ -1,7 +1,7 @@
 @import "../Assets/Main.css";
 
 .homeHero {
-    background-color: var(--background);
+    background-image: url('../Assets/plantWall.jpg');
     width: 97%;
     height: 120vh;
     display: flex;
@@ -9,6 +9,15 @@
     align-items: center;
     padding: 0.75rem 1rem 0.75rem 1rem;
     border-radius: 1rem;
+}
+
+.frameMe {
+    width: calc(100% + 2rem);
+    height: calc(100% + 3rem);
+    margin-left: -1rem;
+    margin-top: -1.5rem;
+    margin-right: -1rem;
+    margin-bottom: -1.5rem;
 }
 
 .homeHeroText {

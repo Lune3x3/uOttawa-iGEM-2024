@@ -2,13 +2,13 @@ import './Navbar.css'
 
 export const Dropdown = ({ submenus }) => {
     return (
-        <ul>
+        <ul className='submenu'>
             {submenus.map((submenu, index) => (
-                <li>
+                <div className='submenuItem'>
                     <a href={submenu.url} className="linkText">
                         {submenu.title}
                     </a>
-                </li>
+                </div>
             ))}
         </ul>
     )

@@ -7,13 +7,13 @@ export const MenuItems = ({ items }) => {
     const [visible, setVisible] = useState(false);
 
     return(
-        <li className="pageText"
+        <div className="pageText"
         onMouseEnter={() => setVisible(true)}
         onMouseLeave={() => setVisible(false)}>
             <a className="dropdown">
                 {items.title}
             </a>
             {visible && (<Dropdown submenus={items.submenu}/>)}
-        </li>
+        </div>
     );
 };

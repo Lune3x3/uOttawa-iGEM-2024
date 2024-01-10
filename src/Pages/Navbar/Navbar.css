@@ -54,18 +54,39 @@
 
 .pageText {
     color: rgb(216, 216, 216);
+    position: relative;
 }
 
 .pageText:hover {
     color: white;
-    font-weight: 700;
     cursor: pointer;
+}
+
+.dropdown {
+    text-decoration: none;
 }
 
 .linkText {
     color: rgb(216, 216, 216);
+    text-decoration: none;
 }
 
 .linkText:hover {
     color: white;
+    text-decoration: none;
+}
+
+.submenu {
+    background-color: var(--background);
+    position: absolute;
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.submenuItem {
+    padding: 10px;
+}
+
+.submenuItem:hover {
+    background-color: var(--primary);
 }
