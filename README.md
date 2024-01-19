@@ -13,4 +13,4 @@ If you get an error message, you may need to manually add "npm" to your system p
 
 ## Running the project
 
-Running this project is simple if you have Node installed. Simply use the command line to navigate to the root directory and run "npm start". This should open the website on [port 3000](https://localhost:3000)
+Running this project is simple if you have Node installed. Simply use the command line to navigate to the root directory and run "npm start". This should open the website on [port 3000](http://localhost:3000/)
