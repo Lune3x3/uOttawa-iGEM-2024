@@ -1,7 +1,7 @@
-@import '../../Assets/Main.css';
+@import '../../../Assets/Main.css';
 
 .aboutUsHero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/HomeBanner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../Assets/HomeBanner.jpg");
     width: 97%;
     height: 70vh;
     display: flex;

@@ -10,7 +10,7 @@ export function Overlay({ person }) {
         <>
             <div>
                 <div className="profileButton" onClick={() => setIsOverlayOpen(!isOverlayOpen)}>
-                    <img className="profileImage" src={require('../../../Assets/Members/' + person.image)} alt={person.image}/>
+                    <img className="profileImage" src={require('../../../../Assets/Members/' + person.image)} alt={person.image}/>
                 </div>
 
                 {isOverlayOpen && 
