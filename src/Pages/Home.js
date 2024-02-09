@@ -33,7 +33,7 @@ export const Home = () => {
             </section>
 
             <div className="frosted">
-                    <h3 className="text"> The underlying problem this project addresses goes here </h3>
+                <h3 className="text"> The underlying problem this project addresses goes here </h3>
             </div>
 
             <div className="homeRoot">

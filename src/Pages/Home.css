@@ -1,7 +1,7 @@
 @import "../Assets/Main.css";
 
 .homeHero {
-    background-image: url('../Assets/plantWall.jpg');
+    background-image: url('/public/plantWall.jpg');
     width: 97%;
     height: 120vh;
     display: flex;

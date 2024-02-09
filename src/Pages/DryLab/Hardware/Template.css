@@ -1,0 +1,45 @@
+@import '../../../Assets/Main.css';
+
+h1 {
+    color: var(--text);
+}
+
+h2 {
+    color: var(--text);
+}
+
+h3 {
+    color: var(--text);
+}
+
+p{
+    color: var(--text);
+}
+
+li{
+    color: var(--text);
+    margin: 1.5rem 0.5rem 1.5rem 0.05rem;
+}
+
+li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.menuBar {
+    background-color: var(--primary);
+    position: sticky;
+
+    height: 90vh;
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
