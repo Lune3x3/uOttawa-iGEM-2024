@@ -6,15 +6,17 @@ import file from './Template.md';
 
 export const Hardware = () => {
     const [markdown, setMarkdown] = useState("");
+    const [ids, setIds] = useState([]);
 
     useEffect(() => {
         fetch(file)
             .then((res) => res.text())
             .then((text) => setMarkdown(text));
-    }, []);
+        setIds(Array.from(document.getElementsByTagName("*")));
+    }, [markdown]);
 
+    
     let nextId = 0;
-
     let content =
     <Markdown components={{h2: CustomH2, h3: CustomH3}}>
         {markdown}
@@ -48,20 +50,25 @@ export const Hardware = () => {
         )
     }
     
-    let ids = Array.from(document.getElementsByTagName("*"));
     let tags = [];
-    console.log(tags);
-
+    
     ids.forEach(element => {
-        if(element.id != "" && element.id != "root"){
+        if(element.id !== "" && element.id !== "root"){
             tags.push(element);
         }
     });
-
+    
     function clickHandle(id) {
-        document.getElementById(id).scrollIntoView({ behavior: "smooth"});
+        //document.getElementById(id).scrollIntoView({ behavior: "smooth", top: 40});
+        window.scrollTo({
+            behavior: 'smooth',
+            top:
+              document.getElementById(id).getBoundingClientRect().top -
+              document.body.getBoundingClientRect().top -
+              80
+        })
     }
-
+    
     return (
         <div className='container'>
             <div className='menuBar'>

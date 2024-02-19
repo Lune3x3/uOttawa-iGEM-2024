@@ -34,6 +34,7 @@ li:hover{
 
 .menuBar {
     background-color: var(--primary);
+    position: -webkit-sticky;
     position: sticky;
 
     height: 90vh;
@@ -42,4 +43,8 @@ li:hover{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.content {
+    padding: 3rem;
 }
