@@ -23,28 +23,28 @@ export const Hardware = () => {
     </Markdown>;
 
     function CustomH2(props) {
-        var children = Children.toArray(props.children);
-        var text = children.toString();
-        var slug = text.toLowerCase().replace(/\W/g, '-');
+        // var children = Children.toArray(props.children);
+        // var text = children.toString();
+        // var slug = text.toLowerCase().replace(/\W/g, '-');
 
         nextId = nextId + 1;
 
         return (
-            <h2 id={nextId} className={slug}>
+            <h2 id={nextId}>
                 {props.children}
             </h2>
         )
     }
 
     function CustomH3(props) {
-        var children = Children.toArray(props.children);
-        var text = children.toString();
-        var slug = text.toLowerCase().replace(/\W/g, '-');
+        // var children = Children.toArray(props.children);
+        // var text = children.toString();
+        // var slug = text.toLowerCase().replace(/\W/g, '-');
 
         nextId = nextId + 1;
 
         return (
-            <h3 id={nextId} className={slug}>
+            <h3 id={nextId}>
                 {props.children}
             </h3>
         )
@@ -65,7 +65,7 @@ export const Hardware = () => {
             top:
               document.getElementById(id).getBoundingClientRect().top -
               document.body.getBoundingClientRect().top -
-              80
+              130
         })
     }
     
@@ -73,7 +73,11 @@ export const Hardware = () => {
         <div className='container'>
             <div className='menuBar'>
                 {tags.map(element => 
-                    <li key={element.id} onClick={() => clickHandle(element.id)}>{element.className}</li>
+                    <a key={element.id} 
+                    className={element.localName === 'h3' && 'customH3'} 
+                    onClick={() => clickHandle(element.id)}>
+                        {element.innerText}
+                    </a>
                 )}
             </div>
 

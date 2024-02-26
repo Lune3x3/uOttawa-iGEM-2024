@@ -16,14 +16,22 @@ p{
     color: var(--text);
 }
 
-li{
+a{
     color: var(--text);
     margin: 1.5rem 0.5rem 1.5rem 0.05rem;
 }
 
-li:hover{
+a:hover{
     font-weight: bold;
     cursor: pointer;
+}
+
+.customH2 {
+    color: var(--text);
+}
+
+.customH3 {
+    padding-left: 30px;
 }
 
 .container {
@@ -34,17 +42,21 @@ li:hover{
 
 .menuBar {
     background-color: var(--primary);
-    position: -webkit-sticky;
-    position: sticky;
 
     height: 90vh;
     width: 50vw;
 
+    position: -webkit-sticky;
+    position: sticky;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    align-self: flex-start;
+
+    padding: 0.5rem;
 }
 
 .content {
-    padding: 3rem;
+    padding: 1rem;
 }
