@@ -87,8 +87,8 @@ export const MenuItemsData = [
                 url: '/education'
             },
             {
-                title: 'Saftey',
-                url: '/saftey'
+                title: 'Safety',
+                url: '/safety'
             }
         ]
     }

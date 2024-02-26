@@ -1,4 +1,4 @@
-import { useState, useEffect, ReactDOM, Children, useRef  } from 'react';
+import { useState, useEffect } from 'react';
 
 import Markdown from 'react-markdown';
 import './Template.css';

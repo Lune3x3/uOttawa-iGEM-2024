@@ -25,7 +25,7 @@ import { Collaborations } from './Pages/Team/Collaborations/Collaborations.js';
 
 import { Education } from './Pages/More/Education/Education.js';
 import { HumanPractices } from './Pages/More/HumanPractices/HumanPractices.js';
-import { Saftey } from './Pages/More/Safety/Safety.js';
+import { Safety } from './Pages/More/Safety/Safety.js';
 
 function App() {
   document.body.style = 'background: rgb(0, 21, 36);';
@@ -56,7 +56,7 @@ function App() {
 
         <Route path="/human-practices" element={<HumanPractices/>}/>
         <Route path="/education" element={<Education/>}/>
-        <Route path="/safety" element={<Saftey/>}/>
+        <Route path="/safety" element={<Safety/>}/>
       </Routes>
     </Router>
   );
