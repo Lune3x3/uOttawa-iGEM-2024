@@ -3,16 +3,16 @@
 .navbar {
     padding-left: 6px;
     padding-right: 6px;
-    width: 97%;
+    width: 98%;
     display: flex;
     position: -webkit-sticky;
     position: sticky;
-    padding: 0.75rem 1rem 0.75rem 1rem;
+    padding: 0.1rem 1rem 0.1rem 1rem;
     border-radius: 1rem;
     place-items: center;
     top: 0px;
     z-index: 20;
-    background: var(--background);
+    background: var(--secondary);
 }
 
 .inNav {
@@ -63,21 +63,22 @@
 }
 
 .dropdown {
-    text-decoration: none;
-}
-
-.linkText {
-    color: rgb(216, 216, 216);
-    text-decoration: none;
-}
-
-.linkText:hover {
     color: white;
     text-decoration: none;
 }
 
+.linkText {
+    color: white;
+    text-decoration: none;
+}
+
+.linkText:hover {
+    color: black;
+    text-decoration: none;
+}
+
 .submenu {
-    background-color: var(--background);
+    background-color: var(--secondary);
     position: absolute;
     padding: 10px;
     padding-top: 30px;
@@ -88,5 +89,5 @@
 }
 
 .submenuItem:hover {
-    background-color: var(--primary);
+    background-color: var(--accent);
 }

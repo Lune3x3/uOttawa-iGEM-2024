@@ -1,12 +1,17 @@
 @import "../Assets/Main.css";
 
 .homeHero {
-    background-image: url('/public/plantWall.jpg');
-    width: 97%;
-    height: 120vh;
+    background: url('/public/natureGif.gif') var(--secondary-75);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+
+    width: 98%;
+    height: 80vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+
     padding: 0.75rem 1rem 0.75rem 1rem;
     border-radius: 1rem;
 }
@@ -21,10 +26,11 @@
 }
 
 .homeHeroText {
-    text-align: center;
+    text-align: left;
     position: absolute;
+
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
 
     color: #969899;
@@ -34,6 +40,63 @@
     font-family: Impact, fantasy;
     font-size: 3rem;
     font-weight: 500;
+}
+
+.learnMore {
+    text-align: center;
+    position: absolute;
+
+    width: 7%;
+    top: 80%;
+    left: 46.5%;
+
+}
+
+.missionBox {
+    width: 100.2%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary);
+    border-radius: 1rem;
+
+    margin-top: 2%;
+}
+
+.missionText {
+    width: 80vh;
+    height: 90%;
+
+    /*
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    */
+
+    margin-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: left;
+}
+
+.missionTitle {
+    font-size: 12;
+    color: white;
+    text-decoration: underline;
+}
+
+.missionPara {
+    font-size: 20;
+    color: white;
+}
+
+.promoVideo {
+    margin: 5%;
+    border-radius: 1rem;
+
+
+    /*border-style: solid;
+    border-radius: 5px;
+    border-color: white;*/
 }
 
 .frosted {
@@ -53,4 +116,8 @@
 
 .text {
     color: var(--text);
+}
+
+.offText{
+    color: var(--background);
 }

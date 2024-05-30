@@ -28,7 +28,7 @@ import { HumanPractices } from './Pages/More/HumanPractices/HumanPractices.js';
 import { Safety } from './Pages/More/Safety/Safety.js';
 
 function App() {
-  document.body.style = 'background: rgb(0, 21, 36);';
+  document.body.style = 'background: rgb(255, 255, 255);';
   return (
     <Router>
       <NavBar/>

@@ -10,10 +10,9 @@ export const NavBar = () => {
         <nav className="navbar">
             <div className="inNav">
                 <Link to="/" className="linkHome">
-                    <img className="homeLogo" src={require('./logo.png')} alt="Logo"/>
+                    <img className="homeLogo" src='/logo.png' alt="Logo"/>
                     <p className="homeText">
-                        Project name
-                        <span> slogan here </span>
+                        Phytogene
                     </p>
                 </Link>
                 <ul className="pages">
