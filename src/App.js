@@ -5,27 +5,9 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import { Home } from './Pages/Home.js';
 import { NavBar } from './Pages/Navbar/Navbar.js';
 
-import { Description } from './Pages/Project/Description/Description.js';
-import { Design } from './Pages/Project/Design/Design.js';
-import { Implementation } from './Pages/Project/Implementation/Implementation.js';
-import { ProofOfConcept } from './Pages/Project/ProofOfConcept/ProofOfConecpt.js';
-
-import { Engineering } from './Pages/WetLab/Engineering/Engineering.js';
-import { Notebook } from './Pages/WetLab/Notebook/Notebook.js';
-import { Parts } from './Pages/WetLab/Parts/Parts.js';
-import { Protocol } from './Pages/WetLab/Protocol/Protocol.js';
-import { Results } from './Pages/WetLab/Results/Results.js';
-
-import { Hardware } from './Pages/DryLab/Hardware/Hardware.js';
-import { Measurements } from './Pages/DryLab/Measurements/Measurements.js';
-import { Model } from './Pages/DryLab/Model/Model.js';
-
 import { Roster } from './Pages/Team/Roster/Roster.js';
-import { Collaborations } from './Pages/Team/Collaborations/Collaborations.js';
 
-import { Education } from './Pages/More/Education/Education.js';
-import { HumanPractices } from './Pages/More/HumanPractices/HumanPractices.js';
-import { Safety } from './Pages/More/Safety/Safety.js';
+import { Template } from './Pages/Template.js';
 
 function App() {
   document.body.style = 'background: rgb(255, 255, 255);';
@@ -36,27 +18,27 @@ function App() {
         <Route path="/" element={<Home/>}/>
         
 
-        <Route path="/description" element={<Description/>}/>
-        <Route path="/design" element={<Design/>}/>
-        <Route path="/proof-of-concept" element={<Implementation/>}/>
-        <Route path="/implementation" element={<ProofOfConcept/>}/>
+        <Route path="/description" element={<Template src="./Pages/Project/Description.md"/>}/>
+        <Route path="/design" element={<Template src="./Pages/Project/Design.md"/>}/>
+        <Route path="/proof-of-concept" element={<Template src="./Pages/Project/ProofOfConcept.md"/>}/>
+        <Route path="/implementation" element={<Template src="./Pages/Project/Implementation.md"/>}/>
 
-        <Route path="/engineering" element={<Engineering/>}/>
-        <Route path="/notebook" element={<Notebook/>}/>
-        <Route path="/protocol" element={<Protocol/>}/>
-        <Route path="/results" element={<Results/>}/>
-        <Route path="/parts" element={<Parts/>}/>
+        <Route path="/engineering" element={<Template src="./Pages/WetLab/Engineering.md"/>}/>
+        <Route path="/notebook" element={<Template src="./Pages/WetLab/Notebook.md"/>}/>
+        <Route path="/protocol" element={<Template src="./Pages/WetLab/Protocol.md"/>}/>
+        <Route path="/results" element={<Template src="./Pages/WetLab/Results.md"/>}/>
+        <Route path="/parts" element={<Template src="./Pages/WetLab/Parts.md"/>}/>
 
-        <Route path="/model" element={<Model/>}/>
-        <Route path="/hardware" element={<Hardware/>}/>
-        <Route path="/measurements" element={<Measurements/>}/>
+        <Route path="/model" element={<Template src="./Pages/DryLab/Model.md"/>}/>
+        <Route path="/hardware" element={<Template src="./Pages/DryLab/Hardware.md"/>}/>
+        <Route path="/measurements" element={<Template src="./Pages/DryLab/Measurements.md"/>}/>
 
         <Route path="/roster" element={<Roster/>}/>
-        <Route path="/collaborations" element={<Collaborations/>}/>
+        <Route path="/collaborations" element={<Template src="./Pages/Team/Collaborations.md"/>}/>
 
-        <Route path="/human-practices" element={<HumanPractices/>}/>
-        <Route path="/education" element={<Education/>}/>
-        <Route path="/safety" element={<Safety/>}/>
+        <Route path="/human-practices" element={<Template src="./Pages/More/HumanPractices.md"/>}/>
+        <Route path="/education" element={<Template src="./Pages/More/Education.md"/>}/>
+        <Route path="/safety" element={<Template src="./Pages/More/Safety.md"/>}/>
       </Routes>
     </Router>
   );
