@@ -43,7 +43,7 @@ a:hover{
 
     /* position: -webkit-sticky; */
     position: sticky;
-    top: 110px;
+    top: 107px;
 
     display: flex;
     flex-direction: column;
@@ -51,6 +51,7 @@ a:hover{
     align-self: flex-start;
 
     padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 .content {
