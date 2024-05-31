@@ -71,7 +71,7 @@ export const Template = ({src}) => {
     }
     
     return (
-        <div className='container'>
+        <>
             <div className='menuBar'>
                 {tags.map(element => 
                     <a key={element.id} 
@@ -85,6 +85,6 @@ export const Template = ({src}) => {
             <div className='content'>
                 {content}
             </div>
-        </div>
+        </>
     )
 }

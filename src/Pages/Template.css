@@ -34,17 +34,12 @@ a:hover{
     padding-left: 30px;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-}
 
 .menuBar {
-    background-color: var(--primary);
+    background-color: var(--secondary);
 
     height: 90vh;
-    width: 50vw;
+    width: 10vw;
 
     position: -webkit-sticky;
     position: sticky;
@@ -59,4 +54,5 @@ a:hover{
 
 .content {
     padding: 1rem;
+    display: inline-block;
 }
