@@ -1,6 +1,6 @@
-import { Overlay } from './Overlay/Overlay.js';
+import { Overlay } from './Overlay/Overlay.jsx';
 import './Roster.css';
-import { Reveal } from '../../Reveal.js';
+import { Reveal } from '../../Reveal.tsx';
 
 
 export const Roster = () => {

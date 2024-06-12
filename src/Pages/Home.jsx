@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import ReactPlayer from 'react-player';
 
+import video from '../../public/rockVibes.mov';
+
 export const Home = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -58,7 +60,7 @@ export const Home = () => {
                     </Reveal>
                 </div>
                 <div className="promoVideo">
-                    <ReactPlayer url="/rockVibes.mov"
+                    <ReactPlayer url={video}
                     width="100%"
                     height="100%"
                     controls={true}/>

@@ -4,19 +4,19 @@ export const MenuItemsData = [
         submenu: [
             {
                 title: 'Description',
-                url: '/description'
+                url: '/uottawa/description'
             },
             {
                 title: 'Design',
-                url: '/design'
+                url: '/uottawa/design'
             },
             {
                 title: 'Proof of Concept',
-                url: '/proof-of-concept'
+                url: '/uottawa/proof-of-concept'
             },
             {
                 title: 'Implementation',
-                url: '/implementation'
+                url: '/uottawa/implementation'
             }
         ]
     },
@@ -25,23 +25,23 @@ export const MenuItemsData = [
         submenu: [
             {
                 title: 'Engineering',
-                url: '/engineering'
+                url: '/uottawa/engineering'
             },
             {
                 title: 'Notebook',
-                url: '/notebook'
+                url: '/uottawa/notebook'
             },
             {
                 title: 'Protocol',
-                url: '/protocol'
+                url: '/uottawa/protocol'
             },
             {
                 title: 'Results',
-                url: '/results'
+                url: '/uottawa/results'
             },
             {
                 title: 'Parts',
-                url: '/parts'
+                url: '/uottawa/parts'
             }
         ]
     },
@@ -50,15 +50,15 @@ export const MenuItemsData = [
         submenu: [
             {
                 title: 'Model',
-                url: '/model'
+                url: '/uottawa/model'
             },
             {
                 title: 'Hardware',
-                url: '/hardware'
+                url: '/uottawa/hardware'
             },
             {
                 title: 'Measurements',
-                url: '/measurements'
+                url: '/uottawa/measurements'
             }
         ]
     },
@@ -67,11 +67,11 @@ export const MenuItemsData = [
         submenu: [
             {
                 title: 'Roster',
-                url: '/roster'
+                url: '/uottawa/roster'
             },
             {
                 title: 'Collaborations',
-                url: '/collaborations'
+                url: '/uottawa/collaborations'
             }
         ]
     },
@@ -80,15 +80,15 @@ export const MenuItemsData = [
         submenu: [
             {
                 title: 'Human practices',
-                url: '/human-practices'
+                url: '/uottawa/human-practices'
             },
             {
                 title: 'Education',
-                url: '/education'
+                url: '/uottawa/education'
             },
             {
                 title: 'Safety',
-                url: '/safety'
+                url: '/uottawa/safety'
             }
         ]
     }
